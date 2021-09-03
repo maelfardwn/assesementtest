@@ -22,6 +22,7 @@ function result(arr1, arr2) {
       oddNumber.push(arr2[i])
     }
   }
+
   for(i=oddNumber.length-1;i>=0;i--){
     sortedOddNumber.push(oddNumber[i])
   }
@@ -29,7 +30,23 @@ function result(arr1, arr2) {
   for(i=evenNumber.length-1;i>=0;i--){
     sortedEvenNumber.push(evenNumber[i])
   }
-console.log(sortedOddNumber, sortedEvenNumber)
+  oddNumber = sortedOddNumber.filter(function(val) {
+    return arr1.indexOf(val) == -1;
+  });
+  evenNumber=evenNumber.filter(function(val) {
+    return arr1.indexOf(val) == -1;
+  });
+  let originalArr = arr2.filter(function(val) {
+    return oddNumber.indexOf(val) == -1;
+  }); 
+  originalArr =  originalArr.filter(function(val) {
+    return evenNumber.indexOf(val) == -1;
+  }); 
+
+  let tmpResult = oddNumber.concat(originalArr)
+  result = tmpResult.concat(evenNumber)
+  
+  return result;
 }
 
 console.log(result(arr1, arr2));
