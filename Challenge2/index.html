@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <div class="title">
+            <h1>Simple Pricing!</h1>
+            <p>the most advanced customer support tools with a simple and affordable Pricing. And you can always try 30 days free!</p>
+        </div>
+        <div class="Container">
+            <div class="Card" onclick="focusFunc()">
+                <div class="titleCard"><h4>BASIC</h4></div>
+                <div class="price"><dd>$</dd><h3>4</h3><label>/ month</label></div>
+                <hr/>
+                <div class="detailCard">
+                    <label>10 Projects</label>
+                    <label>10 Pages</label>
+                    <label>100 Mb disk space</label>
+                </div>
+                <div class="BtnContainer">
+
+                    <button onclick="ClickFunction()">BUY NOW</button>
+                </div>
+            </div>
+            <div class="Card"  onclick="focusFuncStandard()">
+                <div class="titleCard"><h4>STANDARD</h4> <label>Save 15%</label></div>
+                <div class="price"><dd>$</dd><h3>8</h3><label>/ month</label></div>
+                <hr/>
+                <div class="detailCard">
+                    <label>20 Projects</label>
+                    <label>20 Pages</label>
+                    <label>200 Mb disk space</label>
+                </div>
+                <div class="BtnContainer">
+
+                    <button onclick="ClickFunction()">BUY NOW</button>
+                </div>
+            </div>
+            <div class="Card" onclick="focusFuncAdvanced()"> <div class="titleCard"><h4>BASIC</h4></div>
+            <div class="price"><dd>$</dd><h3>12</h3><label>/ month</label></div>
+            <hr/>
+            <div class="detailCard">
+                <label>40 Projects</label>
+                <label>40 Pages</label>
+                <label>500 Mb disk space</label>
+            </div>
+            <div class="BtnContainer">
+
+                <button onclick="ClickFunction()">BUY NOW</button>
+            </div>
+            </div>
+        </div>
+        <div id="background">
+        </div>
+        <div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="Faq">
+                <div class="ContainerFooter">
+                    <h4>How does free trial work?</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+                <div class="ContainerFooter">
+                    <h4>Can i cancel anytime?</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                </div>
+            </div>
+        </div>
+    
+<script>
+    function ClickFunction() {
+      alert("Success");
+    }
+    function focusFunc(){
+        alert("you selected Basic paket");
+    }
+    function focusFuncStandard(){
+        alert("you selected STANDARD paket");
+    }
+    function focusFuncAdvanced(){
+        alert("you selected ADVANCED paket");
+    }
+    </script>
+</body>
+</html>

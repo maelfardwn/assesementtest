@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+display: flex;
+flex-direction: column;
+    z-index: 1;
+}
+#background{
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(61, 61, 114);
+    z-index: 0;
+}
+.title{
+    z-index: 1111;
+    text-align: center;
+}
+.title h1{
+    font-size: 41px;
+    color: rgb(245, 245, 245);
+    font-weight: 800;
+}
+
+.title p{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    padding: 3px;
+    line-height: 23px;
+    font-size: 15px;
+    color: rgb(218, 218, 218);
+    font-weight: 400;
+}
+.Container{
+    
+    z-index: 1111;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.Card{
+    margin: 20px;
+    box-shadow: grey 0px 15px  15px 0px;
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    transition: transform .2s;
+}
+
+.Card:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.Card:focus{
+    box-shadow: black 0px 15px  15px 0px;
+}
+.titleCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: rgb(77, 77, 77);
+}
+.titleCard h4{
+    padding: 15px;
+    margin: 0;
+    color: white;
+}
+.titleCard label{
+    font-size: 13px;
+    padding: 15px;
+    margin: 0;
+    color: white;
+}
+.price{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+}
+.price dd{
+    padding: 5px;
+}
+.price h3{
+    font-size: 40px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.price label{
+    color: rgb(172, 172, 172);
+    margin-top: 20px;
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.detailCard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.detailCard label{
+    padding-left: 20px;
+    text-align: start;
+}
+.BtnContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Card button{
+    border: none;
+    background: rgb(61, 61, 255);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    text-align: center;
+    margin: 0;
+    height: 150px;
+    margin-top: 40px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(88, 88, 88);
+}
+.Faq{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.ContainerFooter{
+    width: 400px;
+}
+.ContainerFooter h4{
+    font-size: 25px;
+    font-weight: 700;
+}
